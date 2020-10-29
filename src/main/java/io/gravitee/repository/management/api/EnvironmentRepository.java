@@ -25,7 +25,6 @@ import io.gravitee.repository.management.model.Environment;
  * @author GraviteeSource Team
  */
 public interface EnvironmentRepository extends CrudRepository<Environment, String>{
-    Set<Environment> findAll() throws TechnicalException;
-    
+
     Set<Environment> findByOrganization(String organizationId) throws TechnicalException;
 }
